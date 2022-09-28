@@ -1,4 +1,3 @@
-
 package pedido;
 
 
@@ -9,8 +8,21 @@ public class Articulo {
     private String descripcion;
     private float precio;
   
-    public Articulo(){
+    public Articulo(float x, String a, String b, float y){
         
+        peso=x;
+        nombre=a;
+        descripcion=b;
+        precio=y;
     }
     
+    public float getPrecio(){
+        
+        return precio;
+    }
+    
+    public float getPeso(){
+        
+        return peso;
+    }
 }

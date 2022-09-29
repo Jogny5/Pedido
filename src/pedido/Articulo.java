@@ -1,6 +1,5 @@
 package pedido;
 
-
 public class Articulo {
     
     private float peso;

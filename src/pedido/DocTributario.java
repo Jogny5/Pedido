@@ -1,14 +1,18 @@
-
 package pedido;
 
-import java.util.ArrayList;
 import java.util.Date;
 
-public class DocTributario {
+public abstract class DocTributario {
+    
     private String numero;
     private String rut;
     private Date fecha;
-    public DocTributario(){
+    
+    public DocTributario(String x, String y, Date z){
+        
+        numero=x;
+        rut=y;
+        fecha=z;
         
     }
     

@@ -10,5 +10,18 @@ public class Cliente {
         this.rut=s2;
         this.direccion=s3;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getRut() {
+        return rut;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+    
     
 }

@@ -5,15 +5,17 @@ import java.util.Date;
 
 public class OrdenCompra {
     
+    private Cliente cliente;
     private Date fecha;
     private String estado;
     public DetalleOrden orden;
     public DocTributario doc;
     public ArrayList<DetalleOrden> ar;
         
-    public OrdenCompra(){
-        
-        
+    public OrdenCompra(Date hoy,String state,Cliente c){
+        this.fecha=hoy;
+        this.estado=state;
+        this.cliente=c;
     }
     void setDocTributario(DocTributario doct){
         doc=doct;

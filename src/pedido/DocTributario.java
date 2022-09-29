@@ -15,5 +15,18 @@ public abstract class DocTributario {
         fecha=z;
         
     }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public String getRut() {
+        return rut;
+    }
+
+    public Date getFecha() {
+        return fecha;
+    }
+    
     
 }

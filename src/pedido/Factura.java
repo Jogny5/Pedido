@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pedido;
 
-/**
- *
- * @author diego
- */
-public class Factura {
+import java.util.Date;
+
+
+public class Factura extends DocTributario{
+    
+    public Factura(String x, String y, Date z){
+        super(x,y,z);
+    }
     
 }

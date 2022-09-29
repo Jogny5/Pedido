@@ -10,4 +10,8 @@ public class Boleta extends DocTributario {
         super(x,y,z);
     }
     
+    public String getBoleta(){
+        return new String(super.getNumero()+"\n"+super.getRut()+"\n"+super.getFecha());
+    }
+    
 }

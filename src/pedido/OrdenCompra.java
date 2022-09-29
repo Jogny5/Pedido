@@ -7,21 +7,35 @@ public class OrdenCompra {
     
     private Date fecha;
     private String estado;
-    public DetalleOrden orden;
-    public DocTributario doc;
+    private DocTributario doc;
+    
     public ArrayList<DetalleOrden> ar;
+    public ArrayList<Pago> pagos;
         
-    public OrdenCompra(){
+    public OrdenCompra(Date x){
         
-        
-    }
-    void setDocTributario(DocTributario doct){
-        doc=doct;
+        fecha=x;
+        estado="Por pagar";
     }
     
     public void addDetalleOrden(DetalleOrden x){
         
         ar.add(x);
+    }
+    
+    public void setDocTributario(DocTributario doct){
+        
+        doc=doct;
+    }
+    
+    public void actEstado(String x){
+        
+        estado=x;
+    }
+    
+    public Date getFecha(){
+        
+        return fecha;
     }
     
     public float calcPrecioSinIVA(){
@@ -71,5 +85,10 @@ public class OrdenCompra {
         }
         
         return total;
+    }
+    
+    public void addPago(Pago x){
+        
+        pagos.add(x);
     }
 }

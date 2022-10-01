@@ -18,7 +18,7 @@ public class Pedido {
         Articulo d=new Articulo(10.51f,"poleron","color gris",24990);
         Articulo e=new Articulo(10.51f,"poleron","color gris",24990);
         OrdenCompra primera=new OrdenCompra(fecha1,estado,cliente1,a,5,b,2,c,3,d,0,e,1);
-        //OrdenCompra segunda=new OrdenCompra(fecha1,estado,cliente2,a,3,b,3,c,0,d,9,e,6);
+        OrdenCompra segunda=new OrdenCompra(fecha1,estado,cliente2,a,3,b,3,c,0,d,9,e,6);
         //OrdenCompra tercera=new OrdenCompra(fecha1,estado,cliente3,a,1,b,3,c,8,d,4,e,6);
         //OrdenCompra cuarta=new OrdenCompra(fecha1,estado,cliente1,a,0,b,7,c,0,d,0,e,1);
         //OrdenCompra quinta=new OrdenCompra(fecha1,estado,cliente2,a,0,b,1,c,1,d,2,e,8);

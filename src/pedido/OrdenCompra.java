@@ -39,7 +39,7 @@ public class OrdenCompra {
         this.estado=state;
         this.cliente=client;
     }
-    void setDocTributario(DocTributario doct){
+    public void setDocTributario(DocTributario doct){
         doc=doct;
     }
     

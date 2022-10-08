@@ -16,6 +16,9 @@ public class OrdenCompra {
         
         fecha=x;
         estado="Por pagar";
+        
+        ar = new ArrayList<>();
+        pagos = new ArrayList<>();
     }
     
     public void addDetalleOrden(DetalleOrden x){

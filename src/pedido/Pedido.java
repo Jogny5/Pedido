@@ -7,9 +7,17 @@ public class Pedido {
     
     public static void main(String[] args) {
         
-        Cliente c=new Cliente("pepe","204446661","peru");
+        Date d = new Date();
         
+        Articulo a = new Articulo(10,"Bola","Tenis",10000);
         
+        DetalleOrden detaO = new DetalleOrden(5,a);
+        
+        OrdenCompra orC = new OrdenCompra(d);
+        
+        orC.addDetalleOrden(detaO);
+        
+        System.out.println(orC.calcPrecio());
         
     }
     

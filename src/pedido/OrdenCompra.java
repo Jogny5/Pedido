@@ -90,5 +90,18 @@ public class OrdenCompra {
     public void addPago(Pago x){
         
         pagos.add(x);
+        
+        float total=0;
+        
+        for(int i=0; i<pagos.size();i++){
+            
+            total = total + pagos.get(i).getMonto();
+            
+        }
+        
+        if(total>=calcPrecio()){
+            
+            estado="Pagado";
+        }
     }
 }

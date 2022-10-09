@@ -10,9 +10,14 @@ public abstract class DocTributario {
     private Date fecha;
     private String dir;
     private Cliente cliente;
+    private float precio;
+    private float precioiva;
+    private float iva;
     
-    public DocTributario(String x, Date z, Cliente cliente){
-        
+    public DocTributario(String x, Date z, Cliente cliente,float Preciosiniva,float Precioconiva,float Iva){
+        this.precio=Preciosiniva;
+        this.precioiva=Precioconiva;
+        this.iva=Iva;
         this.numero=x;
         this.rut=this.cliente.getRut();
         this.fecha=z;
@@ -37,6 +42,18 @@ public abstract class DocTributario {
 
     public Cliente getCliente() {
         return cliente;
+    }
+
+    public float getPrecio() {
+        return precio;
+    }
+
+    public float getPrecioiva() {
+        return precioiva;
+    }
+
+    public float getIva() {
+        return iva;
     }
     
     

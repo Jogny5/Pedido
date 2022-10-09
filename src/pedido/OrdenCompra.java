@@ -35,6 +35,10 @@ public class OrdenCompra {
         
         estado=x;
     }
+
+    public String getEstado() {
+        return estado;
+    }
     
     public Date getFecha(){
         

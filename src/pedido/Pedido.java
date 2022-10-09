@@ -44,10 +44,15 @@ public class Pedido {
         orC.addPago(efectivo1);
         System.out.println(orC.getEstado());
         
+        Boleta boleta1=new Boleta("123456",fecha1,cliente1,orC.calcPrecioSinIVA(),orC.calcPrecio(),orC.calcIVA());
+        System.out.println(boleta1.toString());
+        
         
         System.out.println(orC2.getEstado());
         orC2.addPago(transferencia1);
         System.out.println(orC2.getEstado());
+        
+        
         
         
         System.out.println(orC3.getEstado());

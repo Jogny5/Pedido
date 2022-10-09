@@ -12,8 +12,9 @@ public class Boleta extends DocTributario {
     
     @Override
     public String toString(){
-        return this.getNumero()+"\n"+this.getRut()+"\n"+this.getDir()+"\n"+this.getPrecio()+"\n"+
-                this.getIva()+"\n"+this.getPrecioiva();
+        return "Boleta\nNumero: "+this.getNumero()+"\nRut: "+this.getRut()+"\nDireccion: "+this.getDir()+
+                "\nPrecio sin iva: "+this.getPrecio()+"\nIva: "+
+                this.getIva()+"\nTotal: "+this.getPrecioiva()+"\n";
     }
     
 }

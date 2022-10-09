@@ -26,6 +26,10 @@ public class OrdenCompra {
         doc=doct;
     }
     
+    void setCliente(Cliente client){
+        cliente=client;
+    }
+    
     public void addDetalleOrden(DetalleOrden x){
         
         ar.add(x);

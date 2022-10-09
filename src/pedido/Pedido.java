@@ -103,6 +103,27 @@ public class Pedido {
         orC4.addPago(efectivo3);
         System.out.println(orC4.getEstado());
         
+        
+        
+        
+        System.out.println(a.toString()+",");
+        System.out.println(cliente1.toString()+",");
+        System.out.println(orC.toString()+",");
+        System.out.println(detaO.toString()+",");
+        System.out.println(transferencia1.toString()+",");
+        System.out.println(efectivo1.toString()+",");
+        System.out.println(tarjeta1.toString()+",");
+        System.out.println(cliente1.getDireccion().toString()+",");
+        
+        orC2.setDocTributario(boleta2);
+        orC2.setCliente(cliente4);
+        
+        System.out.println(orC2.toString());
+        
+        
+       
+        
+        
     }
     
 }

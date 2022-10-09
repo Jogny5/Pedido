@@ -14,7 +14,10 @@ public abstract class DocTributario {
     private float precioiva;
     private float iva;
     
-    public DocTributario(String x, Date z, Cliente client,float Preciosiniva,float Precioconiva,float Iva){
+    
+    public DocTributario(String x, Date z, Cliente client,float Preciosiniva,
+            float Precioconiva,float Iva){
+        
         this.precio=Preciosiniva;
         this.precioiva=Precioconiva;
         this.iva=Iva;
@@ -56,7 +59,7 @@ public abstract class DocTributario {
     public float getIva() {
         return iva;
     }
-    
+
     @Override
     public String toString(){
         return "DocTributario\n Numero: "+this.getNumero()+

@@ -12,7 +12,7 @@ public class Factura extends DocTributario{
     
     @Override
     public String toString(){
-        return "Factura\nNumero"+this.getNumero()+"\nRut: "+this.getRut()+"\nDireccion: "+this.getDir()+
+        return "Factura\nNumero: "+this.getNumero()+"\nRut: "+this.getRut()+"\nDireccion: "+this.getDir()+
                 "\nPrecio sin iva: "+this.getPrecio()+"\nIva: "+
                 this.getIva()+"\nTotal: "+this.getPrecioiva()+"\n";
     }

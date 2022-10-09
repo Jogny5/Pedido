@@ -14,7 +14,7 @@ public class Efectivo extends Pago {
     
     public float calcDevolucion(){
         
-        return getMonto()-oc.calcPrecio();
+        return oc.calcPrecio()-getMonto();
     }
 
     public OrdenCompra getOc() {

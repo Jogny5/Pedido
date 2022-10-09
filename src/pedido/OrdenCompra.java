@@ -31,6 +31,8 @@ public class OrdenCompra {
         ar.add(x);
     }
     
+    
+    
     public void actEstado(String x){
         
         estado=x;
@@ -125,7 +127,7 @@ public class OrdenCompra {
         
         if(total>=calcPrecio()){
             
-            estado="Pagado";
+            estado="Pagado\n";
         }
     }
     

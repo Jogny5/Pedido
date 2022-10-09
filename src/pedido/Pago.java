@@ -17,4 +17,13 @@ public abstract class Pago {
         
         return monto;
     }
+
+    public Date getFecha() {
+        return fecha;
+    }
+    
+    @Override
+    public String toString(){
+        return "Pago\nMonto: "+this.getMonto()+"\nFecha: "+this.getFecha()+"\n";
+    }
 }

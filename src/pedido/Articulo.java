@@ -24,4 +24,18 @@ public class Articulo {
         
         return peso;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+    
+    @Override
+    public String toString(){
+        return "clase Articulo\nPeso: "+this.getPeso()+"\nNombre: "+this.getNombre()+
+                "\nDescripcion: "+this.getDescripcion()+"\nPrecio: "+this.getPrecio();
+    }
 }

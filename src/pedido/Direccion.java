@@ -10,4 +10,13 @@ public class Direccion {
         
         dir=x;
     }
+
+    public String getDir() {
+        return dir;
+    }
+    
+    @Override
+    public String toString(){
+        return "Direccion\ndireccion: "+this.getDir();
+    }
 }

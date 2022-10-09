@@ -16,5 +16,14 @@ public class Efectivo extends Pago {
         
         return getMonto()-oc.calcPrecio();
     }
+
+    public OrdenCompra getOc() {
+        return oc;
+    }
+    
+    @Override
+    public String toString(){
+        return "Efectivo\nOrdenCompra: "+this.getOc();
+    }
     
 }

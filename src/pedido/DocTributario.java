@@ -57,5 +57,14 @@ public abstract class DocTributario {
         return iva;
     }
     
+    @Override
+    public String toString(){
+        return "DocTributario\n Numero: "+this.getNumero()+
+                "\nRut: "+this.getRut()+"\nFecha: "+this.getFecha()+
+                "\nDireccion: "+this.getDir()+"\nCliente: "+this.getCliente()+
+                "\nPrecio sin iva: "+this.getPrecio()+"\nIva: "+this.getIva()+
+                "\nPrecio total: "+this.getPrecio();
+    }
+    
     
 }

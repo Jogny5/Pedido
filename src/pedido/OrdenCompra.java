@@ -44,6 +44,24 @@ public class OrdenCompra {
         
         return fecha;
     }
+
+    public DocTributario getDoc() {
+        return doc;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public ArrayList<DetalleOrden> getAr() {
+        return ar;
+    }
+
+    public ArrayList<Pago> getPagos() {
+        return pagos;
+    }
+    
+    
     
     public float calcPrecioSinIVA(){
         
@@ -109,5 +127,12 @@ public class OrdenCompra {
             
             estado="Pagado";
         }
+    }
+    
+    @Override
+    public String toString(){
+        return "OrdenCompra\nFecha: "+this.getFecha()+"\nEstado: "+
+                this.getEstado()+"\nDocTributario: "+this.getDoc()+
+                "\nCliente: "+this.getCliente();
     }
 }

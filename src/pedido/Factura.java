@@ -4,17 +4,17 @@ import java.util.Date;
 
 
 public class Factura extends DocTributario{
-    private String datosEmpresa;
-    public Factura(float mci,float msi,float iv,String x,Date z,String s,Cliente c){
-        super(mci,msi,iv,x,z,s,c);
+    
+    public Factura(String x, Date z, Cliente cliente,float Preciosiniva,float Precioconiva,float Iva){
+        
+         super(x,z,cliente,Preciosiniva,Precioconiva,Iva);
     }
     
-    public String GetFactura(){
-        return new String("Facura de compra\n"+datosEmpresa+"\nFecha"+super.getFecha()+
-                "\nFactura Numero "+super.getNumero()+"\n"+super.cliente.getNombre()+"\n"+
-                super.cliente.getRut()+"\n"+super.cliente.getDireccion()+"\n"+
-                super.getFecha()+"\n"+super.getMontoSinIva()+"\nIva "+super.getIva()+
-                "\ntotal "+super.getMontoConIva());
+    @Override
+    public String toString(){
+        return "Factura\nNumero: "+this.getNumero()+"\nRut: "+this.getRut()+"\nDireccion: "+this.getDir()+
+                "\nPrecio sin iva: "+this.getPrecio()+"\nIva: "+
+                this.getIva()+"\nTotal: "+this.getPrecioiva()+"\n";
     }
     
 }

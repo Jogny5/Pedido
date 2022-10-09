@@ -14,6 +14,18 @@ public class Transferencia extends Pago{
         banco=a;
         numCuenta=b;
     }
+
+    public String getBanco() {
+        return banco;
+    }
+
+    public String getNumCuenta() {
+        return numCuenta;
+    }
     
+    @Override
+    public String toString(){
+        return "Transferencia\nBanco: "+this.getBanco()+"\nNumero de la cuenta: "+this.getNumCuenta()+"\n";
+    }
     
 }

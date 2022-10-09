@@ -4,52 +4,70 @@ import java.util.Date;
 
 public abstract class DocTributario {
     
-    private float montoConIva;
-    private float montoSinIva;
-    private float iva;
+     
     private String numero;
+    private String rut;
     private Date fecha;
-    private String caracteristicas;
-    public Cliente cliente;
+    private String dir;
+    private Cliente cliente;
+    private float precio;
+    private float precioiva;
+    private float iva;
     
-    public DocTributario(float mci,float msi,float iv,String x,Date z,String s,Cliente c){
-        montoConIva=mci;
-        montoSinIva=msi;
-        iva=iv;
-        numero=x;
-        fecha=z;
-        caracteristicas=s;
-        cliente=c;
+    
+    public DocTributario(String x, Date z, Cliente client,float Preciosiniva,
+            float Precioconiva,float Iva){
+        
+        this.precio=Preciosiniva;
+        this.precioiva=Precioconiva;
+        this.iva=Iva;
+        this.numero=x;
+        this.cliente=client;
+        this.rut=this.cliente.getRut();
+        this.fecha=z;
+        dir= this.cliente.getDireccion();
     }
 
     public String getNumero() {
         return numero;
     }
 
+    public String getRut() {
+        return rut;
+    }
+
     public Date getFecha() {
         return fecha;
     }
 
-    public String getCaracteristicas() {
-        return caracteristicas;
+    public String getDir() {
+        return dir;
     }
 
-    public float getMontoConIva() {
-        return montoConIva;
+    public Cliente getCliente() {
+        return cliente;
     }
 
-    public float getMontoSinIva() {
-        return montoSinIva;
+    public float getPrecio() {
+        return precio;
+    }
+
+    public float getPrecioiva() {
+        return precioiva;
     }
 
     public float getIva() {
         return iva;
     }
 
-    public Cliente getCliente() {
-        return cliente;
+    @Override
+    public String toString(){
+        return "DocTributario\n Numero: "+this.getNumero()+
+                "\nRut: "+this.getRut()+"\nFecha: "+this.getFecha()+
+                "\nDireccion: "+this.getDir()+"\nCliente: "+this.getCliente()+
+                "\nPrecio sin iva: "+this.getPrecio()+"\nIva: "+this.getIva()+
+                "\nPrecio total: "+this.getPrecio();
     }
-    
     
     
 }

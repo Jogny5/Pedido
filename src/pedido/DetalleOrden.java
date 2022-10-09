@@ -30,5 +30,17 @@ public class DetalleOrden {
         
         return item.getPeso()*cantidad;
     }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public Articulo getItem() {
+        return item;
+    }
     
+    @Override
+    public String toString(){
+        return "DetalleOrden\n Cantidad: "+this.getCantidad()+"\nItem: "+this.getItem();
+    }
 }

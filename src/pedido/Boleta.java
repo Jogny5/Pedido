@@ -5,15 +5,16 @@ import java.util.Date;
 
 public class Boleta extends DocTributario {
     
-    public Boleta(float mci,float msi,float iv,String x,Date z,String s,Cliente c){
+    public Boleta(String x, Date z, Cliente cliente,float Preciosiniva,float Precioconiva,float Iva){
         
-        super(mci,msi,iv,x,z,s,c);
+        super(x,z,cliente,Preciosiniva,Precioconiva,Iva);
     }
     
-    public String getBoleta(){
-        return new String("Boleta "+super.getNumero()+"\n"+super.getFecha()+"\n"+super.cliente.getNombre()+
-                "\n"+super.cliente.getRut()+"\n"+super.cliente.getDireccion()+"\n"+super.getCaracteristicas()+
-                "\n"+super.getMontoSinIva()+"\nIva "+super.getIva()+"\ntotal "+super.getMontoConIva());
+    @Override
+    public String toString(){
+        return "Boleta\nNumero: "+this.getNumero()+"\nRut: "+this.getRut()+"\nDireccion: "+this.getDir()+
+                "\nPrecio sin iva: "+this.getPrecio()+"\nIva: "+
+                this.getIva()+"\nTotal: "+this.getPrecioiva()+"\n";
     }
     
 }

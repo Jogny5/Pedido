@@ -24,4 +24,11 @@ public class Cliente {
     }
     
     
+    
+    @Override
+    public String toString(){
+        return "Cliente\nNombre: "+this.getNombre()+"\nRut: "+
+                this.getRut()+"\nDireccion: "+this.getDireccion();
+    }
+    
 }
